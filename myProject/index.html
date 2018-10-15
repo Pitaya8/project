@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css"/>
+
+		<!--nav的link-->
+		<link rel="stylesheet" type="text/css" href="css/index/ui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/style.css"/>
+		<script type="text/javascript" src="js/index_nav/navbar.js"></script>
+		<script type="text/javascript" src="js/index_nav/knockout.js"></script>
+		<script type="text/javascript" src="js/index_nav/index_nav_info.js"></script>
+		<script type="text/javascript" src="js/index_nav/jquery.aimmenu.js"></script>
+		
+		
+	</head>
+	<body>
+		<!--header-->
+		<div id="header">
+			<div id="header_header">
+				<!--top-->
+				<div id="header_top"  class="container">
+					Hi,欢迎来到如此生活&nbsp;&nbsp;
+					<span>登录</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<span>免费注册</span>&nbsp;&nbsp;|&nbsp;
+					<i class='iconfont icon1'>&#xe64f;</i>&nbsp;<i class='iconfont icon2'>&#xe620;</i>
+					
+					<ul>
+						<li>我的生活
+							<i class="iconfont">&#xe633;</i>&nbsp;|
+							<ul>
+								<li>我的订单</li>
+								<li>星币查询</li>
+								<li>余额查询</li>
+								<li>我的优惠券</li>
+							</ul>
+						</li>
+						<li>商家入驻&nbsp;|</li>
+						<li>帮助中心
+							<i class="iconfont">&#xe633;</i>&nbsp;|
+							<ul>
+								<li>帮助首页</li>
+								<li>售后服务</li>
+							</ul>
+						</li>
+						<li>更多导航
+							<i class="iconfont">&#xe633;</i>&nbsp;
+							<ul>
+								<li>首页</li>
+								<li>海外精品</li>
+								<li>星范儿</li>
+								<li>星特惠</li>
+								<li>星粉专区</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--mid-->
+			<div id="header_mid" class="container">
+				<i><img src="img/header/logo.gif"></i>
+				<div>
+					<span>商品</span><span>店铺</span><br>
+					<input type="text" id="search_input" placeholder="格力">
+					<input type="button" id="search_btn" value="搜索">
+					<ul>
+						<li>山茶油</li>
+						<li>iphone X</li>
+						<li>COACH</li>
+						<li>韩都衣舍</li>
+						<li>ARTIART不倒杯</li>
+						<li>清风</li>
+						<li>三只蚂蚁</li>
+						<li>卡罗特</li>
+					</ul>
+				</div>
+				<i><img src="img/header/iphones.png"></i>
+			</div>
+		
+			<!--nav-->
+			<div id="header_nav" class="container">
+				<div class="container clearfix mt-40">
+					<div class="wp navbar">
+					<div class="macth_xv_navlist">
+						<div class="macth_xv_menu">
+							<!--左侧导航 start-->
+							<div class="macth_xv_categorys">
+								<div class="macth_xv_cat_title">
+									<h2 class="macth_cat_name"><a href="###">全部商品分类<b class="macth_xv_icon_bai"></b></a></h2>
+								</div>
+								<div class="macth_xv_cat_catlist ">
+									<ul class="macth-dropdown-menu" data-bind="foreach:navData">
+				
+											<li class="macth_xvitem" data-bind="attr:{'data-submenu-id':$data.id}">
+												<h3>
+													<span><i><img src="css/img/images/homeicon.png"></i></span><span class="macth_xvh3_a"><a href="javascript:void(0)" data-bind="text:$data.title"></a></span><s></s>
+												</h3>
+												<div data-bind="attr:{'id':$data.id}" class="macth_popover">
+													<div class="macth_popover-content">
+														<ul class="macth_content_ul"  data-bind="foreach:$data.content">
+															<li class="macth_nav_li">
+																<a class="macth_xvnav_li_alist" href="###" data-bind="text:$data.title"></a>
+																<ul class="macth_xvnav_li_ul" data-bind="foreach:$data.content">
+																	<li><a href="###" data-bind="text:$data"></a></li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="macth_cat-right">
+														<a href="###" target="_blank">
+															<img src="css/img/images/rightbanner.jpg" style="margin-top: 6px">
+														</a>
+													</div>
+												</div>
+											</li>
+				
+										</ul>
+								</div>
+							</div>
+							<!--左侧导航 end-->
+							<!--中间导航 start-->
+							<ul class="macth_xv_nav">
+								<li class="macth_liactive"><a href="###">首页</a></li>
+								<li><a href="###">海外精品</a></li>
+								<li><a href="###">星范儿</a></li>
+								<li><a href="###">星特惠</a></li>
+								<li><a href="###">星粉专区</a></li>
+							</ul>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--left-->
+			<div id="header_left">
+				<ul>
+					<li><i class="iconfont">&#xe64a;</i></li>
+					<li><i class="iconfont">&#xe657;</i></li>
+					<li><i class="iconfont">&#xe60b;</i></li>
+					<li><i class="iconfont">&#xe503;</i></li>
+					<li><i class="iconfont">&#xe624;</i></li>
+					<li><i class="iconfont">&#xe613;</i></li>
+					<li><i class="iconfont">&#x3441;</i></li>
+					<li><i class="iconfont">&#xe618;</i></li>
+					<li><i class="iconfont">&#xe604;</i></li>
+				</ul>
+			</div>
+			
+			<!--right-->
+			<div id="header_right">
+				<div class="header_right_one">
+				</div>
+				<div class="header_right_two">
+					<div>
+						<i class="iconfont icon-qicheqianlian-1-copy"></i>
+						<p>购<br>物<br>车</p>
+						<span>0</span>
+					</div>
+					
+					<ul>
+						<li><i class='iconfont icon-discountticket'></i></li>
+						<li><i class='iconfont icon-aixin'></i></li>
+						<li><i class='iconfont icon-xing'></i></li>
+						<li><i class='iconfont icon-yanjing-'></i></li>
+						<li><i class='iconfont icon-zhanghu'></i></li>
+						<li><i class='iconfont icon-dingbu'></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--body-->
+		<div id="rcsh_body">
+			<div id="rcsh_banner">
+			
+			</div>
+			<div id="rcsh_banner_bottom" class="container">
+				
+			</div>
+			<div id="rcsh_brand_festival"  class="container">
+				
+			</div>
+			<div id="rcsh_brand_recommend"  class="container">
+				
+			</div>
+			<div id="one_f"  class="container">
+				
+			</div>
+			<div id="two_f"  class="container">
+				
+			</div>
+			<div id="three_f" class="container">
+				
+			</div>
+			<div id="four_f" class="container">
+				
+			</div>
+			<div id="five_f" class="container">
+				
+			</div>
+			<div id="six_f" class="container">
+				
+			</div>
+			<div id="you_like" class="container">
+				
+			</div>
+		</div>
+		
+		<!---->
+		<div id="rcsh_footer">
+			<div id="rcsh_footer_top" class="container">
+				
+			</div>
+			<div id="rcsh_footer_mid" class="container">
+				
+			</div>
+			<div id="rcsh_footer_bottom" class="container">
+				
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" src="js/index.js"></script>
